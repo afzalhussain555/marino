@@ -1,0 +1,363 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins'); */
+
+*{
+    box-sizing: border-box;
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+}
+button{
+    border: none;
+}
+
+img{
+    width: 100%;
+    height: 100%;
+}
+a{
+    text-decoration: none;
+}
+.padding{
+    padding: 0 5%;
+}
+.spcace-btw{
+    display: flex;
+    justify-content: space-between;
+}
+
+.flex-row-wise{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-row-wise-rev{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+}
+
+.flex-col-wise{
+    display: flex;
+    flex-direction: column;
+}
+
+header{
+    top: 0;
+    position: fixed;
+    width: 100vw;
+    background-color: white;
+    box-shadow:0 4px 12px 0 rgb(0 0 0 / 20%);
+}
+header div{
+    width: 100%;
+}
+
+.top-bar{
+    background-color: #333;
+}
+.top-bar-content{
+    display: flex;
+    align-items: center;
+}
+.top-bar-content i{
+    color: whitesmoke;
+    font-size: 12px;
+}
+.top-bar-content span{
+    font-size: 12px;
+    line-height: 1.8rem;
+    margin:0 1.5rem 0 .5rem;
+    color: whitesmoke;
+}
+.heading{
+    display: flex;
+    align-items: center;
+    width: 30%;
+    padding: 6px 0;
+}
+
+.social-media{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.icon-button{
+    width: 1.6rem;
+    line-height: 1.6rem !important;
+    text-align: center;
+    margin: 0.7rem;
+    border-radius: 30%;
+    cursor: pointer;
+    font-size: 12px;
+    min-width: 25px;
+    min-height: 25px;
+}
+
+.social-media a,.profile{
+    background-color: #333333;
+    color: white;
+    transition: transform .3 ease;
+}
+.social-media a:hover{
+    background-color: grey;
+}
+.top-bar-menu button{
+    background-color: white;
+    color: #333333;
+    border:none;
+}
+.top-bar-menu button:hover{
+    background-color: #333333;
+    color: white;
+}
+
+.collection-btn{
+    padding: 10px 20px;
+    background-color: #ce8989;
+    color: grey;
+    font-weight: bold;
+    border-radius: 20px;
+    margin: 15px 0px;   
+}
+
+.collection-btn button:hover{
+    background-color: #333;
+
+}
+
+.navbar-outer-line{
+    border-top:2px solid grey;
+    border-bottom:2px solid grey;
+}
+.navbar{
+    margin: 0 70px;
+}
+nav ul{
+    display: flex;
+    flex-direction:row; 
+    line-height: 30px;
+    justify-content: center;
+}
+nav li{
+    flex:1;
+    border-right: 1px solid grey;
+    cursor: pointer;
+}
+nav li:first-child{
+    border-left: 1px solid grey;
+}
+nav li a{
+    font-size: 14px;
+    color:#333;
+}
+nav ul li:hover{
+    background-color: #666666;
+    transition: all .5s ease;
+}
+nav ul .active{
+    background-color: #242323 !important;
+}
+nav ul li:hover a,
+nav ul .active a{
+    color:white;
+}
+
+.body-container{
+    margin-top: 115px;
+}
+.main-window{
+    width:100%;
+    padding-top: 10px;
+    position: relative;
+}
+.main-window .window {
+    width: 100%;
+    position:relative;
+    padding-top:25%;
+    min-height: 250px;
+}
+
+.offer-desc{
+    flex:1;
+}
+
+.content-container{
+    margin-top: 30px;
+}
+.content-heading{
+    justify-content: center;
+    padding-bottom: 30px;
+}
+.content-heading h3{
+    font-size: 2vw;
+}
+
+.line{
+    width:160px;
+    height: 5px;
+    background-color: #383636;
+    justify-content: center;
+    border-radius: 8px;
+    margin: 0 10px;
+}
+
+.line-two{
+    width:150px;
+    height: 5px;
+    background-color: #c09393;
+    justify-content: center;
+    border-radius: 8px;
+    margin: 5 10px;
+}
+
+
+.small-line{
+    width:20px;
+    height: 3px;
+    background-color: #393737;
+    border-radius: 3px;
+    margin: 0 3px;
+}
+.fashion-items{
+    position: relative;
+}
+.fashion-items-window{
+    position: relative;
+    width: 100%;
+    user-select: none;
+}
+.fashion-items-container{
+    width: 100%;
+    position:relative;
+    padding-top:23%;
+    min-height: 200px;
+}
+.fashion-items-container .card-holder{
+    position: absolute;
+    inset: 0;
+    display: flex;
+    justify-content: space-evenly;
+}
+.card{
+    width: 18.5%;
+    height:100%;
+    transition: all 0.4s ease;
+}
+.card:hover{
+    transform: scale(1.2);
+}
+.fashion-items-btn{
+    position: absolute;
+    width: 2.8vw;
+    line-height: 2.8vw !important;
+    border: 1px solid #333333;
+    top:calc(50% - 1.3vw);
+    font-size: 1.2vw;
+    animation: none !important;
+}
+.fashion-items-btn:hover{
+    background-color: #333;
+    color: whitesmoke;
+}
+.left-sliding-btn{
+    transform: rotate(90deg);
+    left:-3vw;
+}
+.right-sliding-btn{
+    transform: rotate(-90deg);
+    right:-3vw;
+}
+.collections{
+    margin-top: 40px;
+    width:100%;
+    user-select: none;
+}
+.collections .image-gallery{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.image-gallery img{
+    width: 200px;
+}
+.img-colwise{
+    width: 100%;
+}
+
+.collections-content{
+    justify-content: center;
+    align-items: center;
+}
+
+.footer{
+    width: 100%;
+    padding: 15px 0px;
+    background-color: #e8dae8;
+    text-align: left;
+    padding-left: 50px;
+}
+.footer p{
+    color: black;
+    padding: 10px 0;
+    font-size: 14px;
+}
+
+.carousel-container {
+    position: relative;
+    width: 100%;
+    height: 400px;
+  }
+  
+  .carousel-slide {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.5s ease-in-out;
+  }
+
+  .carousel-img{
+    width: 1263px;
+  }
+  
+  .carousel-slide img {
+    width: 100% !important;
+    height: 100%;
+  }
+  
+  .prev-btn,
+  .next-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #fff;
+    color: #000;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .prev-btn {
+    left: 0;
+  }
+  
+  .next-btn {
+    right: 0;
+  }
+
+@media only screen and (max-width:768px){
+    .gallery-content{
+        flex-direction: column;
+    }
+    .img-col{
+        width: 100%;
+    }
+    .image-gallery img{
+        width: 50%;
+    }
+}
+
+
+  
+
